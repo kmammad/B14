@@ -1,0 +1,50 @@
+Library Catalog System
+Develop a Java program that allows a library to manage its catalog of books. Users can add new books to the catalog, search for books by title, and list all books in the catalog.
+Book class Requirements:
+• Attributes:
+• title: String to store the title of the book.
+• author: String to store the author's name.
+• yearPublished: int to store the year the book was published.
+• Constructor:
+• Book(String title, String author, int yearPublished): Initializes a new Book object with the provided title, author, and publication year.
+• Getters/Setters:
+• Implement getters for all three attributes. Setters are optional based on whether you want book details to be mutable.
+LibraryCatalog class Requirements:
+• Attributes:
+• books: An array of Book objects to store the catalog.
+• count: An int to track the number of books currently in the catalog.
+• Constructor:
+• LibraryCatalog(int size): Initializes the catalog with a specific size for the books array and sets count to 0.
+• Methods:
+• addBook(Book book): Adds a new Book to the books array and increments count.
+• searchByTitle(String title): Searches for books by title. Prints details of all books that match the search query.
+• displayCatalog(): Prints details of all books in the catalog.
+Main Method Requirements:
+• Initialize a Scanner object to read input from the console.
+• Create a LibraryCatalog object.
+• Enter a loop that allows the user to choose actions like adding a book, searching by title, listing all books, or exiting.
+• Based on user input, perform the corresponding actions using the methods of LibraryCatalog.
+Sample Output:
+Welcome to the Library Catalog System!
+1. Add Book
+2. Search by Title
+3. List All Books
+4. Exit
+Enter your choice: 1
+Enter book title: Java Fundamentals
+Enter author: John Doe
+Enter publication year: 2021
+Book added successfully!
+1. Add Book
+2. Search by Title
+3. List All Books
+4. Exit
+Enter your choice: 3
+Catalog:
+1. Java Fundamentals by John Doe, 2021
+1. Add Book
+2. Search by Title
+3. List All Books
+4. Exit
+Enter your choice: 4
+Thank you for using the Library Catalog System. Goodbye!

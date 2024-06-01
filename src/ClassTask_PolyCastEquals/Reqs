@@ -1,0 +1,18 @@
+Basic Inventory Management System
+Overview
+Create a simple inventory management system that tracks products in a store.
+Use polymorphism and custom equals() methods to handle different types of products.
+Requirements
+Product Classes:
+Create a class Product with common properties like id, name, and price, and include a method applyDiscount().
+Implement concrete product classes such as Electronics and Clothing. Each class should have unique attributes and its own implementation of applyDiscount().
+Inventory Class:
+Build an Inventory class to manage different products.
+Use an ArrayList to store instances of products.
+Implement methods to add products, remove products, and find products by name.
+Polymorphism:
+Demonstrate polymorphism by using the Product type to store various product types and invoking the applyDiscount() method polymorphically.
+Overriding Equals:
+Override the equals() method in each product class to compare products based on id and name.
+User Interface:
+Create a simple text-based user interface (UI) for adding, removing, and displaying products in the inventory.

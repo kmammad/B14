@@ -1,0 +1,56 @@
+Real Estate Management System
+
+Develop a Java program to manage different types of properties within a real estate portfolio, using class inheritance to differentiate between residential and commercial properties.
+
+Class Hierarchy and Implementation Details:
+
+Property (Superclass)
+•	Attributes:
+•	address: String to store the property's address.
+•	squareFeet: int to store the property's size in square feet.
+•	price: double to store the asking price of the property.
+
+•	Constructor: Initializes the property with an address, square feet, and price.
+•	Methods:
+
+•	calculateTax(): Calculates property tax based on a base rate ($2.00 per square foot) and returns it
+•	describe(): Provides a generic description of the property, suitable for listings in the following format:
+This property located at [address] covers an area of [squareFeet] square feet and is priced at [price].
+•	toString(): Returns a string representation of the property, including all details.
+
+Residential (Subclass of Property)
+
+•	Additional Attributes:
+•	bedrooms: int to store the number of bedrooms.
+•	bathrooms: int to store the number of bathrooms.
+
+•	Constructor: Inherits from Property and initializes bedrooms and bathrooms.
+
+Methods:
+
+•	calculateTax(): Adjusts tax calculation based on residential rates. ($1.50 per square foot)
+•	describe(): Provides a more detailed description including bedrooms and bathrooms including super class’s description in the format:
+This home features [noOfBedrooms] bedrooms and [noOfBarhrooms] bathrooms."
+•	toString(): Returns a string representation of the property, including super class’s properties.
+
+
+
+
+Commercial (Subclass of Property)
+•	Additional Attributes:
+•	propertyType: String to store the type of commercial property (e.g., retail, office, industrial).
+•	Constructor: Inherits from Property and initializes the property type.
+Methods:
+•	calculateTax(): Adjusts tax calculation based on commercial property rates.( ($2.50 per square foot)
+•	describe(): Provides additional information specific to commercial property types in the format:
+•	It is designed for [property type] use.
+•	toString(): Returns a string representation of the property, including super class’s properties.
+
+
+
+
+
+Main Method Logic:
+•	Create arrays for Residential and Commercial properties.
+•	Initialize and add some properties to these arrays.
+•	Loop through each array and print the details of each property.
